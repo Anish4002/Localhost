@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -13,11 +12,10 @@ export default defineConfig({
     },
   },
   root: path.resolve(__dirname, "client"),
-build: {
-  outDir: "../dist", // relative path to go one level above client/
-  emptyOutDir: true,
-}
-
+  build: {
+    outDir: "../dist", // output at repo root
+    emptyOutDir: true,
+  },
   server: {
     fs: {
       strict: true,
