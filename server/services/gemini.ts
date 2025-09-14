@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { type Candidate, type Internship, type InternshipMatch } from "@shared/schema";
 
 const ai = new GoogleGenAI({ 
-  apiKey: process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY || "" 
+  apiKey: process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY || "AIzaSyBUO2KKPI4wrxGFuAtZKT0FZOG-hLZtL74" 
 });
 
 export interface InternshipMatchResult {
